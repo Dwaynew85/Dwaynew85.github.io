@@ -1,21 +1,45 @@
 ---
 layout: post
-title:      "Enter your title here"
-date:       2021-02-18 10:17:26 +0000
+title:      "JavaScript Driving with Rails under the hood"
+date:       2021-02-18 05:17:26 -0500
 permalink:  enter_your_title_here
 ---
 
 
-The content of your blog post goes here.# My Final Project: Fortnite Store
+I must admit, though I had a more fluid time building this project, not having to reference what I've done in previous labs as much, it was still quite a challenge for me. I couldn't get my mind off of simplicity with less lines of code, like with Rails. Yet I do appreciate how much more I could do with JavaScript on the front end.
 
-Though this was the most challenging app I've build so far, having been my first using React and Redux, I had the most fun with this one. The idea from this app came from the fact that I wanted to build an ecommerce site. Though I didn't want to have to enter a bunch of item data in order to have an inventory list. Yet while scouring YouTube to better understand React Routing, I came across a Fortnite API with items that included prices, pictures, and everything else you'd need for inventory!
+I wanted to see my Rails project come to life more, so I went with the backend of my Rails Keepflix project. A social media platform based around movies. Where a user can add a movie to their personal list of movies they've seen and other users can comment and give their opinions on it. Other features are being able to edit and delete their comments.
 
-For starters my index.js utilizes redux and thunk for handling state throughout my app. Which keeps track of the shopping cart throughout the app, and information collected from the backend. Also utilizing React's StrictMode, which was included with ```create-react-app```.
+Going through the project, I learned of the neater process of using Object.assign, instead of asigning element properties with setAttributes or '='.
+So:
+```
+ let submit = document.createElement("input");
+    submit.setAttribute("type", "submit");
+    submit.setAttribute("name", "commit")
+    submit.setAttribute("value", "Create Comment")
+    submit.setAttribute("style", "display: none")
+    submit.setAttribute("data-disabled-with", "Create Comment")
+```
 
-My App.js file has one child, SiteContainer, where all the magic happens! Using react-router-dom, SiteContainer houses the routes for every major component page on the app. Nav houses the links at the top of the page for the entire app. List handles the /store path, which list the current inventory, and the /upcoming path that lists items coming soon. Both of which display elements that represent each Item component. They are clickable, which allow you to see more details on the selected item. 
+Will look more like:
+```
+let subInp = document.createElement('input')
+ Object.assign(subInp, {
+        className: 'destroy',
+        type: 'submit',
+        value: "X"
+    })
+```
 
-Clicking on an item shows their details. Represented by the ItemDetail component. Store items allow you to add the item to the cart. While you can only view details for upcoming items. Clicking on the cart allows you to see a list of items, represented by the CartLi component, along with a form to fill out your personal information (CartInput component). Filling out and submitting your order sends your order information to the backend and reloads the page. Starting your order process over from scratch. Clearing out the cart.
+I've also learned the simplicity between event listeners.
+Insted of:
+```
+document.addEventListener('submit', someFunction());
+```
+When I can, I replace it with:
+```
+object.onsubmit = function();
+```
 
-The final page is the order history, which is saved on the backend and represented by the OrderHistory component. Clicking this link will fetch the order history list from the backend API. Which will be listed via the OrderLi component.
+I was able to get everything working. For the most part, it runs smoothly. It loads the current user and displays the added movies plus comments. Now I'm just going to clean it up a bit and make it look neat. Looking forward to learning the simplicity of React.
 
-And there we have it. The jist of my React/Redux app. A Fortnite store displaying items for sale. That allows you to submit an order and view order history.
