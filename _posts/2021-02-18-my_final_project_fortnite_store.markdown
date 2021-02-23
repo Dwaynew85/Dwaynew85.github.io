@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My Final Project: Fortnite Store"
-date:       2021-02-18 10:18:05 +0000
+date:       2021-02-18 05:18:05 -0500
 permalink:  my_final_project_fortnite_store
 ---
 
