@@ -1,7 +1,7 @@
 # Site settings
 author: Dwayne Weller
 title: Dwayne Weller
-header-img: img/home-bg.png # CHANCE TO NAME BANNER
+header-img: images/home-bg.png # CHANCE TO NAME BANNER
 email: dpweller85@gmail.com
 copyright_name: Dwayne Weller
 description: > # this means to ignore newlines until "baseurl:"
