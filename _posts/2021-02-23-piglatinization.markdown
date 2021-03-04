@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "piglatinization!!!"
+title:      "Piglatinization!!!"
 date:       2021-02-23 08:57:33 +0000
 permalink:  piglatinization
 ---

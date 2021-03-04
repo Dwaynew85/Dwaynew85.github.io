@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "my keepflix sinatra project"
+title:      "My keepflix sinatra project"
 date:       2021-02-23 08:56:44 +0000
 permalink:  my_keepflix_sinatra_project
 ---

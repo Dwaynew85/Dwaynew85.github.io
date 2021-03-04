@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "my movie cli project"
+title:      "My movie cli project"
 date:       2021-02-23 08:58:56 +0000
 permalink:  my_movie_cli_project
 ---
