@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I am a Full Stack Web Developer expanding my knowledge in Ruby on Rails, JavaScript, React.js, and Python.
   Seeking to serve and collaborate with a team who aligns with my values. I believe technology is a platform to 
   improve lives and empower growth. I look forward to collaborating with others to serve that cause.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Dwaynew85
 
