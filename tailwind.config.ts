@@ -40,6 +40,7 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        cyan: "#00BFFF",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
