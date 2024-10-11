@@ -5,7 +5,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 const RecentProjects = () => {
   return (
-    <div className='py-5'>
+    <div className='py-5' id='projects'>
       <h1 className='heading'>
         A small selection of {' '}
         <span className='text-cyan'>recent projects</span>
