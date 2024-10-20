@@ -6,7 +6,7 @@ import { VscChevronRight } from 'react-icons/vsc'
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36'>
+    <div className='pt-36'>
       <div>
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
         <Spotlight className='-top-10 left-[85%] h-[80vh] w-[50vw]' fill='cyan' />
@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       <div className='flex justify-center relative my-20 z-10'>
         <div className='max-w[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-          <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Dynamic Web Magic with Next.js</h2>
+          <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Weller TS</h2>
 
           <TextGenerateEffect 
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
