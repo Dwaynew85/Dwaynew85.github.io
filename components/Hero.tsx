@@ -48,10 +48,10 @@ const Hero = () => {
             Hi, I&apos;m Dwayne, a Full Stack developer passionate about creating digital solutions that bring your ideas to life. I&apos;m here to help turn your vision into reality.
           </p>
 
-          <a href='#about'>
+          <a href='#experience'>
           <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
             <MagicButton
-              title="Show My Work"
+              title="My History"
               icon={<VscChevronRight />}
               position="right"
             />

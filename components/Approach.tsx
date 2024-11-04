@@ -24,7 +24,7 @@ const Approach = () => {
   }, []);
 
   return (
-    <section className="w-full py-10">
+    <section className="w-full py-10" id="approach">
       <h1 className="heading">My <span className="text-cyan">Approach</span></h1>
       <p className="text-center text-xs mt-2">{interactionText}</p> {/* // CHANGE! Only relevent for mobile */}
       <div className="my-10 flex flex-col lg:flex-row items-center justify-center gap-4">
