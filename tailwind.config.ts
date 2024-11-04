@@ -41,6 +41,7 @@ const config = {
         },
         purple: "#CBACF9",
         cyan: "#00BFFF",
+        highlight: "#F4a261",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -145,12 +146,22 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        pulse: {
+          "0%, 100%": { opacity: "1"},
+          "50%": { opacity: "0.8" },
+        },
+        glow: {
+          "0%, 100%": { boxShadow: "0 0 8px rgba(0, 191, 255, 0.5)" },
+          "50%": { boxShadow: "0 0 16px rgba(0, 191, 255, 0.8)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
+        pulse: "pulse 2s ease-in-out infinite",
+        glow: "glow 3s ease-in-out infinite",
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
@@ -158,6 +169,16 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      gradientColorStops: {
+        "cyan-dark-start": "#333333",
+        "cyan-dark-end": "#00BFFF",
+      },
+      boxShadow: {
+        cyan: "0 4px 6px -1px rgba(0, 191, 255, 0.5), 0 2px 4px -1px rgba(0, 191, 255, 0.3)",
+      },
+      transitionTimingFunction: {
+        "smooth-in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
       },
     },
   },

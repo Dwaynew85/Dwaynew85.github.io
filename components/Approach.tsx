@@ -1,18 +1,37 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
+  const [interactionText, setInteractionText] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) { // Adjust this breakpoint as needed
+        setInteractionText("Press to reveal!");
+      } else {
+        setInteractionText("Hover to reveal!");
+      }
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="w-full py-10">
       <h1 className="heading">My <span className="text-cyan">Approach</span></h1>
-      <p className="text-center text-xs mt-2">(Hover to reveal)</p> {/* // CHANGE! Only relevent for mobile */}
+      <p className="text-center text-xs mt-2">{interactionText}</p> {/* // CHANGE! Only relevent for mobile */}
       <div className="my-10 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card 
           title="Planning & Strategy" 
           icon={<AceternityIcon order="Phase 1" />}
-          description="We'll collaborate to map out your website's goal, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements." // CHANGE! Can we make this funnier or more engaging?
+          description="Let’s roll up our sleeves and chat about your website's goals, who you want to reach, and the must-have features—think of it as building your digital dream team!"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,7 +41,7 @@ const Approach = () => {
         <Card 
           title="Development & Progress Update" 
           icon={<AceternityIcon order="Phase 2" />}
-          description="Once we agree on the plan, I dive into coding. From initial sketches to polished code, I keep you updated every step of the way." // CHANGE! Can we make this funnier?
+          description="Once we have got a game plan, I will dive headfirst into coding—no pressure, just progress!"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,7 +56,7 @@ const Approach = () => {
         <Card 
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everyting into functional code, building your website from the ground up." // CHANGE! Can we make this funnier or more engaging?
+          description="Time to bring your vision to life—like magic, but with more code and fewer rabbits!"
         >
           <CanvasRevealEffect
             animationSpeed={3}
