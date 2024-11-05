@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: 'export',
+  reactStrictMode: true,
   images: {
-    unoptimized: true, // Necessary for Next.js static export
+    unoptimized: true, 
   },
+  assetPrefix: isProd ? '/Dwaynew85.github.io/' : '',
+  basePath: isProd ? '/Dwaynew85.github.io' : '',
+  output: 'export',
 };
 
 export default nextConfig;
