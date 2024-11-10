@@ -17,6 +17,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Get Weller Tech Solutions",
   description: "The Path To Better Digital Success",
+  icons: {
+    icon: "./favicon.png"
+  }
 };
 
 export default function RootLayout({
