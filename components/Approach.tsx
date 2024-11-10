@@ -8,14 +8,14 @@ const Approach = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) { // Adjust this breakpoint as needed
+      if (window.innerWidth < 768) {
         setInteractionText("Press to reveal!");
       } else {
         setInteractionText("Hover to reveal!");
       }
     };
 
-    handleResize(); // Set initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -26,7 +26,7 @@ const Approach = () => {
   return (
     <section className="w-full py-10" id="approach">
       <h1 className="heading">My <span className="text-cyan">Approach</span></h1>
-      <p className="text-center text-xs mt-2">{interactionText}</p> {/* // CHANGE! Only relevent for mobile */}
+      <p className="text-center text-xs mt-2">{interactionText}</p>
       <div className="my-10 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card 
           title="Planning & Strategy" 
