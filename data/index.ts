@@ -74,11 +74,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "Bronx Tech Hub",
+    des: "Modern website for Bronx Tech Hub, built with Next.js and styled from a custom Figma design.",
+    img: "/bth.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"], // UPDATE react, next, tailwind, typescript, figma
+    link: "https://BronxTechHub.org",
   },
   {
     id: 2,
@@ -109,42 +109,28 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Dwayne has been an absolute pleasure. He's got this great ability to break down complex technical problems into manageable, actionable steps. Whether it's crafting a stunning portfolio site or tackling AI concepts, Dwayne consistently delivers with precision, creativity, and attention to detail.",
+    name: "George Nunez",
+    title: "Founder/CEO, Bronx Tech Hub",
+    profile: '/george_profile.png',
+    link: 'https://www.linkedin.com/in/george-nunez/',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Dwayne's expertise was a game-changer for my business. He didn't just elevate my brand--he introduced tools that made time managment more efficient and helped me tap into new revenue opportunities. His ability to understand my vision and deliver practical, impactful solutions has been invaluable. Thanks to his work, my business operations have become smoother, and I've seen remarkable growth in customer engagement. I'm truly grateful for the lasting difference he's made.",
+    name: "Yanick Dopson",
+    title: "Founder/CEO, YMD Fitness",
+    profile: '/yanick_profile.png',
+    link: 'https://www.linkedin.com/in/yanick-dopson-46846ba7/'
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "homedepot",
+    img: "/hd_logo.png",
+    nameImg: "/the_home_depot.png",
   },
   {
     id: 2,
@@ -154,21 +140,21 @@ export const companies = [
   },
   {
     id: 3,
+    name: "aws",
+    img: "/aws_logo.png",
+    nameImg: "/amazon-aws-logo-white.png",
+  },
+  {
+    id: 4,
     name: "HOSTINGER",
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
   {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "accenture",
+    img: "/accenture_logo.png",
+    nameImg: "/accenture_emblem.svg",
   },
 ];
 

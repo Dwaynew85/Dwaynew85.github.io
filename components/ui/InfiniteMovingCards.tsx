@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -14,6 +15,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    profile: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -92,24 +94,30 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 md:w-[450px]"
+            className="w-[90vw] max-w-full relative flex flex-col justify-between rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 md:w-[450px]"
             style={{
               background:
                 "linear-gradient(90deg, rgba(0,3,25,1) 0%, rgba(51,51,51,1) 91%, rgba(0,191,255,1) 100%)",
             }}
             key={idx}
           >
-            <blockquote>
+            <blockquote className="flex flex-col h-full">
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-md leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 text-md leading-[1.6] text-white font-normal mb-auto">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <div className="me-3">
-                  <img src="/profile.svg" alt="profile" />
+                  <Image 
+                    src={item.profile} 
+                    alt="profile" 
+                    className="rounded-full object-cover"
+                    width={70}
+                    height={70}  
+                  />
                 </div>
                 <span className="flex flex-col gap-1">
                   <span className=" text-xl leading-[1.6] text-white font-bold">
